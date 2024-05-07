@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: url("../../assets/clear-night-sky-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-box {
+    width: 400px;
+    height: 450px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    outline: 2px solid rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: inherit;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: relative;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-45%);
+    font-size: 1em;
+    color: #fff;
+    transition: 2s;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+
+    padding: 0 35px 0 5px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.forget {
+    margin: -15px 0 30px;
+    font-size: 0.9em;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.forget label {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.forget label input {
+    margin-right: 3px;
+    transform: translateY(2px);
+    background: transparent;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    color: #242424;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.register {
+    margin: 15px 0 30px;
+    font-size: 0.9em;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+}
+
+.register label a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register label a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.input-box ion-icon{
+    position: absolute;
+    right: 3em;
+    color:#fff;
+    font-size: 1.2em;
+}
