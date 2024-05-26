@@ -5,6 +5,52 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ============================= */
+.app__header {
+    display: flex;
+    justify-content: start;
+    /* align-items: flex-start; */
+    gap: 1rem;
+}
+
+.master-Navigation {
+    /* outline: 1px dashed #fff; */
+    padding: 0.25rem;
+    margin-top: 1rem;
+    height: calc(100vh - 30px);
+}
+
+.master-Navigation nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.master-Navigation nav button {
+    width: 100%;
+    min-width: max-content;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    background: transparent;
+}
+
+.master-content {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.app__header .master-content h2 {
+    /* outline: 1px solid pink; */
+    margin: 0 0 0.5rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+/* ============================= */
+
 .admin-dashboard {
     min-width: 80vw;
     width: 75vw;
@@ -12,12 +58,16 @@
     margin-left: auto;
 }
 
-h1 {
-    margin: 20px;
+.container h1 {
+    margin: 0.5 0 0.5rem 1.5rem;
+    /* outline: 1px solid red; */
+    min-width: 100%;
+    text-align: center;
+    text-transform: capitalize;
     font-size: 2em;
     font-weight: 400;
-    text-align: center;
 }
+
 .admin-btn {
     width: 20%;
     height: 40px;

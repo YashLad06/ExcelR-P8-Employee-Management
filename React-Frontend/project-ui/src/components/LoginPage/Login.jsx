@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { images } from '../../constants';
 import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';

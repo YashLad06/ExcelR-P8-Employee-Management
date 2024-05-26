@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.employee-table {
+    margin: 0 1rem;
+}
+
 button {
     width: 20%;
     height: 40px;
