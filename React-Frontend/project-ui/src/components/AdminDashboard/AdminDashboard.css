@@ -31,6 +31,7 @@
     min-width: max-content;
     margin-bottom: 0.5rem;
     text-align: left;
+    color: #242424;
     background: transparent;
 }
 
@@ -73,7 +74,7 @@
     height: 40px;
     border-radius: 5px;
     background: #1E90FF;
-    color: #fff;
+    color: #242424;
     outline: none;
     border: none;
     font-size: 1em;

@@ -28,9 +28,9 @@ function Login() {
             navigateToPage("/admin");
         }
 
-        else if (email === "employee1@yopmail.com") {
+        else if (email === "john.doe@example.com") {
             console.log('Login clicked:', user);
-            navigateToPage("/all-employees");
+            navigateToPage("/employee");
         }
 
         else if (email === "hr.user1@yopmail.com") {
@@ -93,26 +93,26 @@ function Login() {
                                 </label>
                             </div>
                             <div className="center-btn">
-                                <Button 
+                                <Button
                                     variant="contained"
                                     endIcon={<SendIcon />}
                                     onClick={handleLogin}
-                                sx= {{
-                                    width: '100%',
-                                    height: '40px',
-                                    borderRadius: '40px',
-                                    background: '#fff',
-                                    color: '#242424',
-                                    outline: 'none',
-                                    border: 'none',
-                                    fontSize: '1em',
-                                    fontWeight: '600',
-                                    cursor: 'pointer',
-                                    textTransform: 'capitalize',
-                                    '&:hover': {
-                                        background: '#d3d3d3', // replace with your desired hover color
-                                    },
-                                }}
+                                    sx={{
+                                        width: '100%',
+                                        height: '40px',
+                                        borderRadius: '40px',
+                                        background: '#fff',
+                                        color: '#242424',
+                                        outline: 'none',
+                                        border: 'none',
+                                        fontSize: '1em',
+                                        fontWeight: '600',
+                                        cursor: 'pointer',
+                                        textTransform: 'capitalize',
+                                        '&:hover': {
+                                            background: '#d3d3d3', // replace with your desired hover color
+                                        },
+                                    }}
                                 >Login</Button>
                             </div>
 

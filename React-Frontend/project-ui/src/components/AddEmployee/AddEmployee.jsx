@@ -152,7 +152,7 @@ function AddEmployee() {
                         sx={{ marginLeft: '1rem' }}
                     >
                         <p>You are adding New Employee details.</p>
-                        <p>Please add both Professional and personal details.</p>
+                        <p>Please add all relevant details.</p>
                     </Box>
 
                     {/* ADMIN ==> Add Employee dashboard */}
@@ -413,7 +413,7 @@ function AddEmployee() {
                                                 ))}
                                             </TextField>
                                         </Grid>
-                                        <Grid item xs={6} md={3}>
+                                        {/* <Grid item xs={6} md={3}>
                                             <TextField
                                                 disabled
                                                 id="outlined-select-currency"
@@ -421,7 +421,7 @@ function AddEmployee() {
                                                 // defaultValue={ageValue}
                                                 value={age}
                                             />
-                                        </Grid>
+                                        </Grid> */}
                                         <Grid item xs={6} md={3}>
                                             <TextField
                                                 required
@@ -557,8 +557,6 @@ function AddEmployee() {
                                 <b>HR & Finance Details</b>
                             </AccordionSummary>
                             <AccordionDetails sx={{ background: '#e9ffdb' }}>
-                                HR name, PAN Card, Bank Name, IFSC No, Date of Joining, CTC, Button "Do you need payslip?"
-
                                 <Box
                                     component="form"
                                     sx={{

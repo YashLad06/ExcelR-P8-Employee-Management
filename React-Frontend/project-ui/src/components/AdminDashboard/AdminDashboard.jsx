@@ -58,7 +58,7 @@ function AdminDashboard() {
                             handleButtonClick('AddEmployee');
                         }}
                             style={{
-                                border: activeButton === 'AddEmployee' ? '2px dashed #fcc200' : 'transparent',
+                                border: activeButton === 'AddEmployee' ? '2px dashed #242424' : 'transparent',
                             }}
                         >
                             Add new Employee
@@ -68,7 +68,7 @@ function AdminDashboard() {
                             handleButtonClick('EmployeesList');
                         }}
                             style={{
-                                border: activeButton === 'EmployeesList' ? '2px dashed #fcc200' : 'transparent',
+                                border: activeButton === 'EmployeesList' ? '2px dashed #242424' : 'transparent',
                             }}
                         >
                             List of Employees

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employee-dashboard {
+    /* min-width: 100%; */
+    width: 70vw;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.emp-accordion {
+    /* margin-left: 40px; */
+
+    align-items: center;
+}

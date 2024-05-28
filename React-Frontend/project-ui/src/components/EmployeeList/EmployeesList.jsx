@@ -7,55 +7,43 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import { Box } from '@mui/material';
 import "./EmployeesList.css";
 
 const columns = [
-  { id: 'name', label: 'Name', minWidth: 170 },
-  { id: 'code', label: 'ISO\u00a0Code', minWidth: 100 },
+  { id: 'empId', label: 'Employee Id', minWidth: 20 },
+  { id: 'fullName', label: 'Name', minWidth: 50 },
   {
-    id: 'population',
-    label: 'Population',
-    minWidth: 170,
-    align: 'right',
+    id: 'mailId',
+    label: 'Mail Id',
+    minWidth: 50,
+    align: 'left',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
-    id: 'size',
-    label: 'Size\u00a0(km\u00b2)',
-    minWidth: 170,
-    align: 'right',
+    id: 'office',
+    label: 'Location',
+    minWidth: 50,
+    align: 'center',
     format: (value) => value.toLocaleString('en-US'),
   },
   {
-    id: 'density',
-    label: 'Density',
-    minWidth: 170,
-    align: 'right',
+    id: 'designation',
+    label: 'Designation',
+    minWidth: 50,
+    align: 'center',
     format: (value) => value.toFixed(2),
   },
 ];
 
-function createData(name, code, population, size) {
-  const density = population / size;
-  return { name, code, population, size, density };
+function createData(empId, fullName, mailId, office, designation) {
+  // const density = population / size;
+  return { empId, fullName, mailId, office, designation };
 }
 
 const rows = [
-  createData('India', 'IN', 1324171354, 3287263),
-  createData('China', 'CN', 1403500365, 9596961),
-  createData('Italy', 'IT', 60483973, 301340),
-  createData('United States', 'US', 327167434, 9833520),
-  createData('Canada', 'CA', 37602103, 9984670),
-  createData('Australia', 'AU', 25475400, 7692024),
-  createData('Germany', 'DE', 83019200, 357578),
-  createData('Ireland', 'IE', 4857000, 70273),
-  createData('Mexico', 'MX', 126577691, 1972550),
-  createData('Japan', 'JP', 126317000, 377973),
-  createData('France', 'FR', 67022000, 640679),
-  createData('United Kingdom', 'GB', 67545757, 242495),
-  createData('Russia', 'RU', 146793744, 17098246),
-  createData('Nigeria', 'NG', 200962417, 923768),
-  createData('Brazil', 'BR', 210147125, 8515767),
+  createData(101, 'John Doe', 'john.doe@example.com', 'Pune', 'Frontend'),
+  createData(102, 'Jane Doe', 'jane.doe@example.com', 'Mumbai', 'Backend'),
 ];
 
 
@@ -77,13 +65,24 @@ function EmployeesList() {
     <div className="employee-table">
 
       {/* <h3>Table of all Employees</h3> */}
+      <Box
+        height={100}
+        display="flex"
+        alignItems="flexStart"
+        flexDirection="column"
+        gap={1}
+        sx={{ marginLeft: '1rem' }}
+      >
+        <p>You are adding New Employee details.</p>
+        <p>Please add all relevant details.</p>
+      </Box>
 
       {/* Add employee Table here*/}
       <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-        <TableContainer sx={{ maxHeight: '75%', Width: '100%', outline: '1px solid green' }}>
+        <TableContainer sx={{ maxHeight: '75%', maxWidth: '100%' }}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
-              <TableRow sx={{backgroundColor: '#fcc200'}}>
+              <TableRow sx={{ backgroundColor: '#fcc200' }}>
                 {columns.map((column) => (
                   <TableCell
                     key={column.id}
