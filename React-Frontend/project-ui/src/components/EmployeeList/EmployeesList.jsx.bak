@@ -80,7 +80,8 @@ function EmployeesList() {
         gap={1}
         sx={{ marginLeft: '1rem' }}
       >
-        <p>Here is a list of all Employees</p>
+        <p>You are adding New Employee details.</p>
+        <p>Please add all relevant details.</p>
       </Box>
 
       {/* Add employee Table here*/}

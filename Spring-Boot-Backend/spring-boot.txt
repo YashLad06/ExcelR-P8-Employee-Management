@@ -1,5 +1,0 @@
-In this directory, we will add the Backend code,
-Which will be using spring Boot Framework of Java
-
-Purpose:
-Employee Management System: A comprehensive project designed to efficiently manage various employee-related tasks. This system streamlines the process of recording, tracking, and managing employee data, including personal details, attendance, payroll, performance reviews, and more. Built with a focus on user-friendly interfaces and robust functionality, it aims to simplify and automate HR operations in any organization.
