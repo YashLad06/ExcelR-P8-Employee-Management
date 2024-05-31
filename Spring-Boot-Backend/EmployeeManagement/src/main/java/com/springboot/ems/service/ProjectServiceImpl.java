@@ -23,14 +23,15 @@ public class ProjectServiceImpl implements ProjectService {
 
 	@Override
 	public Project getProjectById(long id) {
-		
 	Optional<Project> projectDb=projectRepository.findById(id);
-		if(projectDb.isPresent())
+		
+	if(projectDb.isPresent())
 		{
 			Project project = projectDb.get();
 			return project;
 		}
-		else {
+		else 
+		{
 			throw new RecordNotFoundException("Record Not Found");
 		}
 	}
